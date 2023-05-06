@@ -3,32 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Curriculum Vitae ─ Thiago Rodrigues Santos</title>
+    <link rel="stylesheet" href="./app/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./public/icons/fontawesome-free-6.4.0-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/icons/fontawesome-free-6.4.0-web/css/solid.min.css"
+    />
+    <title>Resume ─ Thiago Rodrigues Santos</title>
   </head>
 
   <body>
-    <header>
-      <h1>Currículo</h1>
+    <header class="header">
+      <h1 class="header__title">Currículo</h1>
 
-      <section>
-        <h2>Thiago Rodrigues</h2>
+      <section class="header__about">
+        <h2 class="about__title">Thiago Rodrigues</h2>
 
-        <p>Auxiliar Administrativo, Web Developer</p>
+        <p class="about__job">Auxiliar Administrativo, Web Developer</p>
       </section>
 
-      <section>
-        <h2>Contato</h2>
+      <section class="header__info">
+        <h2 class="info__title">Contato</h2>
 
-        <address>
-          <p>Rua 8, Vicente Pires</p>
+        <address class="info__data">
+          <p class="data__address">Rua 8, Vicente Pires</p>
 
-          <p>Bras&iacute;lia, DF</p>
+          <p class="data__address">Brasília, DF</p>
 
-          <p>
-            <a href="mailto:thiago.dev2k3@gmail.com">thiago.dev2k3@gmail.com</a>
+          <p class="data__media">
+            <a class="media__email" href="mailto:thiago.dev2k3@gmail.com"
+              >thiago.dev2k3@gmail.com</a
+            >
 
-            <a href="https://trsaints.github.io/"
+            <a class="media__site" href="https://trsaints.github.io/"
               >https://trsaints.github.io/</a
             >
           </p>
@@ -36,110 +46,154 @@
       </section>
     </header>
 
-    <main>
-      <section>
-        <h2>EXPERIÊNCIA</h2>
+    <main class="main">
+      <section class="main__experiences">
+        <h2 class="experiences__title">EXPERIÊNCIA</h2>
 
-        <ul>
-          <li>
-            <h3>Unyleya Educacional , Brasília ─ Jovem Aprendiz</h3>
+        <ul class="experiences__list">
+          <li class="list__experience">
+            <details class="experience__details">
+              <summary class="details__title">
+                Unyleya Educacional , Brasília ─ Jovem Aprendiz
+              </summary>
 
-            <p>DESDE DE JUNHO DE 2022</p>
+              <p class="details__date">DESDE DE JUNHO DE 2022</p>
 
-            <article>
-              <h4>Auxiliando em rotinas no:</h4>
+              <article class="details__tasks">
+                <h4 class="tasks__title">Auxiliando em rotinas no:</h4>
 
-              <ul>
-                <li>
-                  <p>
-                    RM, ERP da TOTVS: Realizar lançamentos de despesas;
-                    cadastrar fornecedores;
-                  </p>
-                </li>
+                <ul class="tasks__list">
+                  <li class="list__task">
+                    <p class="task__desc">
+                      RM, ERP da TOTVS: Realizar lançamentos de despesas;
+                      cadastrar fornecedores;
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Outlook: Enviar e-mails internos referentes às tarefas
-                    realizadas no sistema; solicitar dados internos referentes
-                    às tarefas realizadas no ERP;
-                  </p>
-                </li>
+                  <li class="list__task">
+                    <p class="task__desc">
+                      Outlook: Enviar e-mails internos referentes às tarefas
+                      realizadas no sistema; solicitar dados internos referentes
+                      às tarefas realizadas no ERP;
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    SharePoint: Gerenciar arquivos referentes às tarefas
-                    realizadas no ERP.
-                  </p>
-                </li>
-              </ul>
-            </article>
+                  <li class="list__task">
+                    <p class="task__desc">
+                      SharePoint: Gerenciar arquivos referentes às tarefas
+                      realizadas no ERP.
+                    </p>
+                  </li>
+                </ul>
+              </article>
+            </details>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>FORMAÇÃO</h2>
+      <section class="main__degrees">
+        <h2 class="degrees__title">FORMAÇÃO</h2>
 
-        <ul>
-          <li>
-            <h3>Colégio Estadual Complexo 1, Planaltina ─ Nível Médio</h3>
+        <ul class="degrees__list">
+          <li class="list__degree">
+            <details class="degree__details">
+              <summary class="details__title">
+                Colégio Estadual Complexo 1, Planaltina ─ Nível Médio
+              </summary>
 
-            <p>JANEIRO DE 2018 - DEZEMBRO DE 2020</p>
+              <p class="details__date">JANEIRO DE 2018 - DEZEMBRO DE 2020</p>
 
-            <p>Ensino Médio Regular, no turno matutino.</p>
+              <p class="details__desc">
+                Ensino Médio Regular, no turno matutino.
+              </p>
+            </details>
           </li>
 
-          <li>
-            <h3>
-              SENAI Taguatinga, Bras&iacute;lia &mdash; Profissionalizante (Web
-              Designer)
-            </h3>
+          <li class="list__degree">
+            <details class="degree__details">
+              <summary class="details__title">
+                SENAI Taguatinga, Brasília ─ Profissionalizante (Web Designer)
+              </summary>
 
-            <p>OUTUBRO DE 2021 - DEZEMBRO DE 2021</p>
+              <p class="details__date">OUTUBRO DE 2021 - DEZEMBRO DE 2021</p>
 
-            <p>
-              Abordou os princ&iacute;pios b&aacute;sicos de Web Design, para o
-              desenvolvimento de sites est&aacute;ticos via HTML, CSS e
-              JavaScript.
-            </p>
+              <p class="details__desc">
+                Abordou os princípios básicos de Web Design, para o
+                desenvolvimento de sites estáticos via HTML, CSS e JavaScript.
+              </p>
+            </details>
           </li>
 
-          <li>
-            <h3>Alura, Remoto ─ Bootcamp (Oracle Next Education)</h3>
+          <li class="list__degree">
+            <details class="degree__details">
+              <summary class="details__title">
+                Alura, Remoto ─ Bootcamp (Oracle Next Education)
+              </summary>
 
-            <p>ABRIL DE 2022 - OUTUBRO DE 2022</p>
+              <p class="details__date">ABRIL DE 2022 - OUTUBRO DE 2022</p>
 
-            <p>
-              Abordou os fundamentos básicos do desenvolvimento de
-              <span lang="en">software</span> como tecnologias, paradigmas e
-              ferramentas, além de <span lang="en">soft skills</span> e gestão.
-            </p>
+              <p class="details__desc">
+                Abordou os fundamentos básicos do desenvolvimento de
+                <span lang="en">software</span> como tecnologias, paradigmas e
+                ferramentas, além de <span lang="en">soft skills</span> e
+                gestão.
+              </p>
+            </details>
           </li>
 
-          <li>
-            <h3>Coursera, Remoto ─ Certificação (Suporte em TI)</h3>
+          <li class="list__degree">
+            <details class="degree__details">
+              <summary class="details__title">
+                Coursera, Remoto ─ Certificação (Suporte em TI)
+              </summary>
 
-            <p>FEVEREIRO DE 2023 - O MOMENTO</p>
+              <p class="details__date">FEVEREIRO DE 2023 - O MOMENTO</p>
 
-            <p>
-              Aborda os fundamentos básicos da TI, permitindo o certificado
-              prestar suporte técnico de baixa complexidade nessa área
-              envolvendo hardware, software, redes, administração de sistemas e
-              programação.
-            </p>
+              <p class="details__desc">
+                Aborda os fundamentos básicos da TI, permitindo o certificado
+                prestar suporte técnico de baixa complexidade nessa área
+                envolvendo hardware, software, redes, administração de sistemas
+                e programação.
+              </p>
+            </details>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>COMPETÊNCIAS</h2>
+      <section class="main__skills">
+        <h2 class="skills__title">COMPETÊNCIAS</h2>
 
-        <ul>
-          <li>Programação;</li>
+        <ul class="skills__list">
+          <li class="list__skill">
+            <details class="skill__details">
+              <summary class="details__title">Programação</summary>
 
-          <li>Suporte básico em TI;</li>
+              <p class="details__desc">
+                Principalmente voltado a scripts de automação (bash, excel,
+                power automate) e web front-end
+              </p>
+            </details>
+          </li>
 
-          <li>Office 365.</li>
+          <li class="list__skill">
+            <details class="skill__details">
+              <summary class="details__title">Informática</summary>
+
+              <p class="details__desc">
+                Facilidade para lidar com equipamentos eletrônicos e softwares
+              </p>
+            </details>
+          </li>
+
+          <li class="list__skill">
+            <details class="skill__details">
+              <summary class="details__title">Suporte em TI</summary>
+
+              <p class="details__desc">
+                Suporte básico para solucionar problemas de hardware e software
+              </p>
+            </details>
+          </li>
         </ul>
       </section>
     </main>
