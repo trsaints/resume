@@ -12,7 +12,7 @@
 .degrees__list,
 .skills__list {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .experience__title,
@@ -20,15 +20,26 @@
 .skill__title {
   font-weight: 700;
   margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.experience__details,
+.degree__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-bottom: 1rem;
 }
 
 .experience__date,
+.experience__company,
+.experience__location,
+.degree__school,
 .degree__date {
   background-color: var(--c-gray-ls);
   max-width: max-content;
-  padding: .25rem .5rem;
-  font-size: 16px;
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
   border-radius: 1rem;
-  margin-bottom: .5rem;
   text-transform: uppercase;
 }
