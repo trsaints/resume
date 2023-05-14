@@ -1,0 +1,100 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./main.css");
+
+:root {
+  --c-black: hsl(260, 14%, 4%);
+  --c-black-l: hsl(260, 14%, 10%);
+  --c-gray-d: hsl(257, 5%, 50%);
+  --c-gray: hsl(257, 5%, 60%);
+  --c-gray-l: hsl(255, 5%, 70%);
+  --c-gray-ls: hsl(255, 5%, 80%);
+  --c-main-ls: hsl(196, 84%, 86%);
+  --c-main-l: hsl(196, 84%, 70%);
+  --c-main: hsl(196, 84%, 56%);
+  --c-main-d: hsl(196, 84%, 50%);
+  --c-main-ds: hsl(196, 84%, 40%);
+  --c-white: hsl(260, 48%, 97%);
+}
+
+@font-face {
+  font-family: "RedHat Display";
+  src: url("../../public/fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "RedHat Display";
+  color: var(--c-black-l);
+  font-size: 1.125rem;
+  background-color: var(--c-white);
+  padding: 3rem 1.5rem;
+}
+
+.header {
+  display: grid;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.main {
+  display: grid;
+  gap: 2rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 2rem 3rem;
+  }
+
+  .main,
+  .header {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .main {
+    grid-template-areas: "experiences skills" "degrees skills";
+  }
+
+  .header {
+    grid-template-areas: "naming addressing";
+  }
+
+  .about {
+    grid-area: naming;
+  }
+
+  .info {
+    grid: addressing;
+  }
+
+  .experiences {
+    grid-area: experiences;
+  }
+
+  .degrees {
+    grid-area: degrees;
+  }
+
+  .skills {
+    grid-area: skills;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  body {
+    padding: 3rem 4rem;
+  }
+}
+
+i {
+  pointer-events: none;
+  margin-inline: .5rem;
+}
